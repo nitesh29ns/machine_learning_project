@@ -55,3 +55,8 @@ docker stop <container_id>
 '''
 python setup.py install
 '''
+
+to run ipynb file in vscode
+'''
+pip install ipykernel
+'''

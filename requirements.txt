@@ -3,6 +3,7 @@ gunicorn
 sklearn
 pandas
 numpy
+PyYAML
 - e .    
 
 # -e . = install the custom pakages we write in the current folder. must have setup.py file
