@@ -1,11 +1,11 @@
 from collections import namedtuple
-
+### entity is used to give the structure to the configuration. 
 
 dataingestionconfig = namedtuple("dataingestionconfig",
 ["dataset_download_url","tgz_download_dir","raw_data_dir","ingested_train_dir","ingested_test_dir"])
 
 
-datavalidationconfig = namedtuple("datavalidationconfig",["schema_file_path"])
+datavalidationconfig = namedtuple("datavalidationconfig",["schema_file_path","report_file_path","report_page_file_path"])
 
 dataTransformationconfig = namedtuple("dataTraformationconfig",["add_bedroom_per_room",
                                                                 "transformed_train_dir",

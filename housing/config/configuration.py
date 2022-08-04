@@ -72,9 +72,10 @@ class configuration:
     def get_data_validation_config(self) -> datavalidationconfig :
         try:
             artifact_dir = self.get_training_pipeline_config.artifact_dir
+            
             data_validation_artifact_dir = os.path.join(
                 artifact_dir,
-                DATA_VALIDATION_ARTIFACT_KEY,
+                DATA_VALIDATION_ARTIFACT_DIR_NAME,
                 self.time_stamp)
 
             data_validation_info = self.config_info[DATA_VALIDATION_CONFIG_KEY]
