@@ -4,6 +4,8 @@ sklearn
 pandas
 numpy
 PyYAML
+evidently
+dill
 - e .    
 
 # -e . = install the custom pakages we write in the current folder. must have setup.py file
