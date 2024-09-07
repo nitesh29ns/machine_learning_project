@@ -1,4 +1,3 @@
-
 from housing.pipeline.pipeline import Pipeline
 from housing.exception import HousingException
 from housing.logger import lg
@@ -6,12 +5,10 @@ from housing.config.configuration import configuration
 from housing.component.data_transformation import DataTransformation
 import os
 
-
-
 def main():
     try:
-        config_path = os.path.join("config","config.yaml")
-        pipeline = Pipeline(configuration(config_file_path=config_path))
+        
+        pipeline = Pipeline()
         #pipeline.run_pipeline()
         pipeline.start()
         lg.info("main function execution completed.")

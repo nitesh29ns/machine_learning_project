@@ -82,7 +82,7 @@ class HousingPredictor:
         try:
             model_path = self.get_latest_model_path()
             model = load_object(file_path=model_path)
-            median_house_value = model.predict(X)
+            median_house_value = model. (X)
             return median_house_value
         except Exception as e:
             raise HousingException(e, sys) from e

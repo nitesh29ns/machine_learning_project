@@ -4,7 +4,7 @@ from turtle import home
 from urllib.request import HTTPPasswordMgrWithPriorAuth
 from evidently.dashboard import tabs
 from matplotlib.pyplot import table
-
+from evidently.model_profile.sections import DataDriftProfileSection
 from sklearn.metrics import rand_score
 from housing.logger import lg
 from housing.exception import HousingException
@@ -14,7 +14,6 @@ import os, sys
 import pandas as pd
 import json
 from evidently.model_profile import Profile
-from evidently.model_profile.sections import DataDriftProfileSection
 from evidently.dashboard import Dashboard
 from evidently.dashboard.tabs import DataDriftTab
 from housing.util.util import read_yaml_file

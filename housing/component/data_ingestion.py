@@ -55,7 +55,6 @@ class DataIngestion:
             os.makedirs(raw_data_dir, exist_ok=True)
             
             lg.info(f"extracting tgz file [{tgz_file_path}] into dir: [{raw_data_dir}]")
-            
             with tarfile.open(tgz_file_path) as housing_tgz_file_obj:
                 housing_tgz_file_obj.extractall(path=raw_data_dir)
             
